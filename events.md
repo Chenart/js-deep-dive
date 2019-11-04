@@ -1,8 +1,11 @@
 # Events
+How to handle events and what's happening behind the scenes. 
 
 ## Event Handlers
 ### Design
-<b>We can design using 
+#### Polling
+#### 
+
 
 ### Vanilla JS event handlers
 
