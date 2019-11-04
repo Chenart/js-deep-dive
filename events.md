@@ -33,7 +33,7 @@ The disadvantage is that our application needs to keep checking the state or dat
 ```
 
 ### React event handlers
-In React, we pass the function name into a component's prop. When we click on the component, the function fires. 
+In React, we <b>pass</b> the function name into a component's prop. When we click on the component, the function fires. 
 ```javascript
 // Good: Event handler triggers when we click on the button
 <button onClick={handleClick}>
@@ -41,7 +41,7 @@ In React, we pass the function name into a component's prop. When we click on th
 </button>
 ```
 
-However, avoid this common pitfall where we call the function within the component prop. 
+However, avoid this common pitfall where we accidentally call the function within the component prop. Remember -- we want to <b>pass in</b> the function to the prop not call it.
 ```javascript
 // Bad: Event handler triggers when the component renders, because we're calling the function in the prop. 
 // This looks similar to the HTML event handler, except we use 'onClick' instead of 'onclick'. 
