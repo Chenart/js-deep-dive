@@ -8,5 +8,6 @@ Repo for learning details of JavaScript and browser programming
 ## Links
 Important things for JS developers to know: https://benmccormick.org/2017/07/19/ten-things-javascript/
 Eloquent Javascript: https://eloquentjavascript.net/Eloquent_JavaScript.pdf
+How browsers work: https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/#Introduction
 
 
