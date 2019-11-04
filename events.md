@@ -41,7 +41,7 @@ In React, we <b>pass</b> the function name into a component's prop. When we clic
 </button>
 ```
 
-However, avoid the following common pitfall where we accidentally call the function within the component prop. Remember -- we want to <b>pass in</b> the function to the prop not call it.
+However, avoid the following common pitfall where we accidentally call the function within the component prop. When we do this, the function will execute upon component render, not hardware interrupt. Remember -- we want to <b>pass in</b> the function to the prop not call it.
 ```javascript
 // Bad: Event handler triggers when the component renders, because we're calling the function in the prop. 
 // This looks similar to the HTML event handler, except we use 'onClick' instead of 'onclick'. 
