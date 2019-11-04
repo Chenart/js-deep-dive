@@ -43,10 +43,12 @@ In React, we <b>pass</b> the function name into a component's prop. When we clic
 
 However, avoid the following common pitfall where we accidentally call the function within the component prop. When we do this, the function will execute upon component render, not hardware interrupt. Remember -- we want to <b>pass in</b> the function to the prop not call it.
 ```javascript
-// Bad: Event handler triggers when the component renders, because we're calling the function in the prop. 
-// This looks similar to the HTML event handler, except we use 'onClick' instead of 'onclick'. 
+// Bad: Event handler triggers when the component renders, because we're calling the function in the prop.  
 <button onClick={handleClick()}
   Click me
 </button>
 ```
+Differenes from HTML event handler:
+* The HTML event handler looks like the bad case of the React event handler. Don't mix them up.
+* The HTML event handler uses 'onclick', and the React event handler uses 'onClick'
 
