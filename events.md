@@ -48,7 +48,7 @@ However, avoid the following common pitfall where we accidentally call the funct
   Click me
 </button>
 ```
-Differenes from HTML event handler:
+Differences from HTML event handler:
 * The HTML event handler looks like the bad case of the React event handler. Don't mix them up.
 * The HTML event handler uses 'onclick' as an HTML attribute, and the React event handler uses 'onClick' as a component prop
 
